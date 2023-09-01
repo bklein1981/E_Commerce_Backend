@@ -9,14 +9,14 @@ Category.init(
   {
     //id
     id: {
-      type: INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
     //category_name
     category_name: {
-      DataTypes: STRING,
+      type: DataTypes.STRING,
       allowNull: false
     }
   },

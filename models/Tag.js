@@ -8,14 +8,14 @@ Tag.init(
   {
     //id
     id: {
-      DataTypes: INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
     //tag_name
     tag_name: {
-      DataTypes: STRING
+      type: DataTypes.STRING,
     }
   },
   {
