@@ -74,7 +74,7 @@ router.put('/:id', async (req, res) => {
         res.status(404).json({ message: 'No category found with this id!' });
       } else
       // If the update was successful, return a 200 response
-      res.status(200).json(updatedCategory);
+      res.status(200).json({updatedCategory, message: 'Category updated successfully'});
   } catch (err) {
     // Handle any errors and return a 400 response with the error details
     res.status(400).json(err);
